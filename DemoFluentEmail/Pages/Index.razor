@@ -1,0 +1,17 @@
+﻿@page "/"
+@inherits IndexBase
+
+<h3>Send Email Notification using FluentEmail! 😃</h3>
+
+<hr />
+
+<button class="btn btn-primary" @onclick="SendEmailAsync">Send Email (locally)</button>
+
+<br /><br />
+<h5>Logs:</h5>
+<ul>
+    @foreach (var log in _logs)
+    {
+        <li>@log</li>
+    }
+</ul>
